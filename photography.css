@@ -1,0 +1,65 @@
+/*Start of the body styling*/
+body {
+    background-color: #262621;
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0;
+}
+
+
+
+/* Start of the header styling */
+header {
+    background-color: #2C4001;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+header p {
+    font-size: 25.3px;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 9.7px;
+}
+
+/* Start of the 'a' styling */
+a:hover {
+    color: #737065
+}
+
+
+
+/* Start of the navigation styling */
+nav {
+    background-color: #172601;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: .8rem 2rem;
+    font-weight: 550;
+}
+nav li.active a {
+    background-color: #fff;
+    color: #172601;
+}
+nav li.active a:hover {
+    color: #3E6F02;
+}
+nav a:hover {
+    color: #737065;
+}
