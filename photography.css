@@ -28,7 +28,9 @@ header p {
     letter-spacing: 9.7px;
 }
 
-/* Start of the 'a' styling */
+
+
+/* Start of the 'a' (links) styling */
 a:hover {
     color: #737065
 }
@@ -62,4 +64,40 @@ nav li.active a:hover {
 }
 nav a:hover {
     color: #737065;
+}
+
+
+
+/* Start of the main styling */
+main {
+    padding: 1rem 2vw;
+}
+main ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+main h1 {
+    color: #fff;
+}
+main h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: .4rem;
+    margin-top: 1rem;
+    padding: 0;
+}
+main h3 {
+    font-size: 1rem;
+    background-color: #737065;
+    margin-bottom: .4rem;
+    margin-right: .8rem;
+    color: #fff;
+    display: block;
+    padding: .5rem 1rem;
+}
+main p {
+    color: #fff;
+    margin: 0 0 .3rem 0;
 }
