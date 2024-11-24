@@ -122,13 +122,13 @@ main li.blog p {
 main h1 {
     color: #fff;
 }
-main h2 {
+main h3 {
     font-size: 1.8rem;
     color: #fff;
     margin: 1rem 0 .4rem 0;
     padding: 0;
 }
-main h3 {
+main h2 {
     font-size: 1rem;
     background-color: #4a4a42;
     border-style: solid;
@@ -146,6 +146,7 @@ main p {
     margin: 0 0 .3rem 0;
 }
 .greenbrands {
+    font-size: 1.3rem;
     list-style-type: circle;
     margin-left: 48px;
     display: block;
@@ -153,9 +154,11 @@ main p {
 main dl {
     margin-left: 48px;
 }
-hr.solid {
-    border-top: 5px, solid, #fff;
-    margin: 2rem 0;
+main dt {
+    font-size: 1.2rem;
+}
+main ol {
+    font-size: 1.3rem;
 }
 
 
@@ -178,7 +181,7 @@ footer {
         margin: 0;
         display: block;
     }
-    main h3 {
+    main h2 {
         margin-top: 2rem;
         margin-bottom: -.5rem;
     }
