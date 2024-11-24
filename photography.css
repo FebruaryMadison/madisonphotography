@@ -31,6 +31,9 @@ header p {
 
 
 /* Start of the 'a' (links) styling */
+a {
+    color: #fff;
+}
 a:hover {
     color: #737065
 }
@@ -78,6 +81,19 @@ main ul {
     margin: 0;
     display: flex;
 }
+ul.posts {
+    list-style-type: none;
+    display: block;
+}
+/* ul.border {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: #fff;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+*/
 main li {
     padding: 0 2rem 0 0;
     margin: 0;
@@ -92,6 +108,18 @@ main li.about h1 {
     color: #262621;
 }
 main li.about p {
+    color: #262621;
+}
+main li.blog {
+    background-color: #8a877b;
+    padding: 2rem;
+    margin: 1rem;
+    margin-left: 0;
+}
+main li.blog h1 {
+    color: #262621;
+}
+main li.blog p {
     color: #262621;
 }
 main h1 {
@@ -116,16 +144,35 @@ main p {
     color: #fff;
     margin: 0 0 .3rem 0;
 }
+.greenbrands {
+    list-style-type: circle;
+    margin-left: 48px;
+    display: block;
+}
+main dl {
+    margin-left: 48px;
+}
+
+
+
+/* Start of the footer styling */
+footer {
+    background-color: #172601;
+    text-align: center;
+    padding: .5rem;
+}
+
+
 
 /* Start of media styling for screen width 720px or less */
 @media (max-width: 720px){
+    /* Start of the main media styling for smaller screen widths */
     main ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
         display: block;
     }
-
     main h3 {
         margin-top: 2rem;
         margin-bottom: -.5rem;
