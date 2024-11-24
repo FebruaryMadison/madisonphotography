@@ -35,7 +35,7 @@ a {
     color: #fff;
 }
 a:hover {
-    color: #737065
+    color: #262621;
 }
 
 
@@ -60,7 +60,6 @@ nav a {
 }
 nav li.active a {
     background-color: #737065;
-    /* color: #172601; */
 }
 nav li.active a:hover {
     color: #262621;
@@ -69,7 +68,22 @@ nav a:hover {
     color: #737065;
 }
 
-
+/* Start of the main image styling */
+figure {
+    margin-top: 0;
+    margin-right: -2vw;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+}
+.full-width-plateaus {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: -2vw; /* Counteract the heading and nav padding so the image touches the left edge of the screen */
+    margin-right: -2vw; /* Counteract the heading and nav padding so the image touches the right edge of the screen */
+}
 
 /* Start of the main styling */
 main {
@@ -163,11 +177,41 @@ main ol {
 
 
 
+/* Start of the gallery navigation styling */
+.gallerynav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gallerynav ul {
+    display: flex; 
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.gallerynav a {
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #262621;
+    color: #fff;
+    padding: .8rem 2rem;
+    font-weight: 500;
+}
+.gallerynav a:hover {
+    color: #737065;
+}
+
+
+
 /* Start of the footer styling */
 footer {
     background-color: #000000;
     text-align: center;
     padding: .5rem;
+}
+footer a:hover {
+    color: #737065;
 }
 
 
