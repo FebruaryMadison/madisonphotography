@@ -133,6 +133,34 @@ main li.blog h1 {
 main li.blog p {
     color: #fff;
 }
+ul.gallerypage {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+main li.gallery {
+    background-color: #262621;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #262621;
+    padding: 2rem;
+    margin: 1rem;
+}
+main li.gallery h1 {
+    color: #fff;
+    text-align: center;
+}
+main li.gallery p {
+    max-width: 600px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
 main h1 {
     color: #fff;
 }
@@ -182,6 +210,7 @@ main ol {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 2rem 1rem;
 }
 .gallerynav ul {
     display: flex; 
@@ -218,6 +247,7 @@ footer a:hover {
 
 /* Start of media styling for screen width 720px or less */
 @media (max-width: 720px){
+    
     /* Start of the main media styling for smaller screen widths */
     main ul {
         list-style-type: none;
@@ -228,5 +258,61 @@ footer a:hover {
     main h2 {
         margin-top: 2rem;
         margin-bottom: -.5rem;
+    }
+
+    /* Start of the gallery navigation media styling for smaller screen widths */
+    
+    /* Start of the navigation styling of the h1 and p*/
+    ul.gallerypage {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0 auto; /* Center the container */
+        width: calc(100% - 4vw); /* Account for parent's padding */
+    }
+    main li.gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 400px; /* Ensure consistent width */
+        padding: 1.5rem; /* Adjust padding */
+        box-sizing: border-box; /* Ensure padding fits within width */
+    }
+    
+    /* Start of the gallery navigation styling */
+    .gallerynav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Ensure items wrap in smaller screens */
+    }
+    .gallerynav ul {
+        display: flex;
+        flex-direction: column; /* Stack items vertically for mobile */
+        align-items: center; /* Center-align the items */
+        gap: 2.5rem; /* Add vertical space between items */
+        padding: 0;
+        margin: 0 auto;
+    }
+    .gallerynav a {
+        font-size: 2rem;
+        text-decoration: none;
+        background-color: #262621;
+        color: #fff;
+        padding: 0.8rem 1.5rem; /* Reduce excessive right padding */
+        font-weight: 500;
+        text-align: center;
+        width: 100%; /* Ensure buttons take full width for smaller screens */
+        max-width: 400px; /* Constrain to reasonable size */
+        margin: 0 auto; /* Center buttons */
+    }
+    li.gallerynav {
+        padding: 0;
     }
 }
