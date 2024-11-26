@@ -270,8 +270,8 @@ footer a:hover {
         align-items: center;
         gap: 1.5rem;
         padding: 0;
-        margin: 0 auto; /* Center the container */
-        width: calc(100% - 4vw); /* Account for parent's padding */
+        margin: 0 auto;
+        width: calc(100% - 4vw);
     }
     main li.gallery {
         display: flex;
@@ -280,9 +280,9 @@ footer a:hover {
         align-items: center;
         text-align: center;
         width: 100%;
-        max-width: 400px; /* Ensure consistent width */
-        padding: 1.5rem; /* Adjust padding */
-        box-sizing: border-box; /* Ensure padding fits within width */
+        max-width: 400px;
+        padding: 1.5rem;
+        box-sizing: border-box;
     }
     
     /* Start of the gallery navigation styling */
@@ -290,13 +290,13 @@ footer a:hover {
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* Ensure items wrap in smaller screens */
+        flex-wrap: wrap;
     }
     .gallerynav ul {
         display: flex;
-        flex-direction: column; /* Stack items vertically for mobile */
-        align-items: center; /* Center-align the items */
-        gap: 2.5rem; /* Add vertical space between items */
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
         padding: 0;
         margin: 0 auto;
     }
@@ -305,12 +305,12 @@ footer a:hover {
         text-decoration: none;
         background-color: #262621;
         color: #fff;
-        padding: 0.8rem 1.5rem; /* Reduce excessive right padding */
+        padding: 0.8rem 1.5rem;
         font-weight: 500;
         text-align: center;
-        width: 100%; /* Ensure buttons take full width for smaller screens */
-        max-width: 400px; /* Constrain to reasonable size */
-        margin: 0 auto; /* Center buttons */
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
     }
     li.gallerynav {
         padding: 0;
