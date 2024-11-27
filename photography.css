@@ -346,10 +346,4 @@ footer a:hover {
     li.gallerynav {
         padding: 0;
     }
-
-    /* Fixing main page "first blog" image margins so it aligns with right side of screen alongside the paragraph text */
-    figure.aboutwrapped {
-        text-align: left;
-        margin: 0;
-    }
 }
