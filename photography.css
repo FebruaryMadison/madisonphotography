@@ -1,3 +1,8 @@
+/* Prevent problems with diferent browsers */
+* {box-sizing: border-box;}
+
+
+
 /*Start of the body styling*/
 body {
     background-color: #737065;
@@ -14,6 +19,17 @@ body {
 header {
     background-color: #000000;
     padding: 1rem 2vw;
+    display: flex;
+}
+header div {
+    padding-left: 1vw;
+}
+header img {
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #fff;
 }
 header h1 {
     margin: 0;
@@ -30,6 +46,148 @@ header p {
 
 
 
+/* Start of media styling for screen width 720px or less */
+@media only screen and (max-width: 720px){
+    
+    /* Start of the nav media styling for smaller screens */
+    nav {
+        background-color: #262621;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem 2rem;
+        text-decoration: none;
+        font-weight: 550;
+        text-align: center;
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    nav li.active a {
+        background-color: #737065;
+        background-image: linear-gradient(to bottom, #4a4a42, #737065);
+    }
+    nav li.active a:hover {
+        color: #262621;
+    }
+    nav a:hover {
+        color: #737065;
+    }
+
+    /* Start of the main media styling for smaller screen widths */
+    main ul {
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    main h2 {
+        margin-top: 2rem;
+        margin-bottom: -.5rem;
+    }
+
+    /* Start of the gallery navigation media styling for smaller screen widths */
+    ul.gallerypage {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0 auto;
+        width: calc(100% - 4vw);
+    }
+    main li.gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 1.5rem;
+        box-sizing: border-box;
+    }
+    
+    /* Start of the gallery navigation styling for smaller screens*/
+    .gallerynav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .gallerynav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .gallerynav a {
+        font-size: 2rem;
+        text-decoration: none;
+        background-color: #262621;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    li.gallerynav {
+        padding: 0;
+    }
+}
+/* End of the media styling for screens 720px or less */
+
+
+
+/* Start of media styling for screens 721px or more */
+@media only screen and (min-width: 721px) {
+
+    /* Start of the navigation styling for wide screens*/
+    nav {
+        background-color: #262621;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        padding: .8rem 2rem;
+        font-weight: 550;
+    }
+    nav li.active a {
+        background-color: #737065;
+    }
+    nav li.active a:hover {
+        color: #262621;
+    }
+    nav a:hover {
+        color: #737065;
+    }
+
+    /* Start of the main media styling for wider screen widths */
+    main  ul {
+        display: flex;
+    }
+}
+/* End of the media styling for screens 721px or more */
+
+
+
 /* Start of the 'a' (links) styling */
 a {
     color: #fff;
@@ -40,50 +198,20 @@ a:hover {
 
 
 
-/* Start of the navigation styling */
-nav {
-    background-color: #262621;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0 2vw;
+/* Start of the main image styling */
+.plateaushero {
+    width: 100%;
     margin: 0;
-    display: flex;
+    text-align: center;
 }
-nav a {
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: .8rem 2rem;
-    font-weight: 550;
-}
-nav li.active a {
-    background-color: #737065;
-}
-nav li.active a:hover {
-    color: #262621;
-}
-nav a:hover {
-    color: #737065;
+.plateaushero img {
+    width: 100%;
+    height: auto;
+    max-width: 80rem;
+    text-align: center;
 }
 
-/* Start of the main image styling */
-figure {
-    margin-top: 0;
-    margin-right: -2vw;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding: 0;
-}
-.full-width-plateaus {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: -2vw; /* Counteract the heading and nav padding so the image touches the left edge of the screen */
-    margin-right: -2vw; /* Counteract the heading and nav padding so the image touches the right edge of the screen */
-}
+
 
 /* Start of the main styling */
 main {
@@ -93,7 +221,6 @@ main ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 ul.posts {
     list-style-type: none;
@@ -161,6 +288,15 @@ main li.gallery p {
     margin: 0 auto;
     text-align: center;
 }
+main .download {
+    background-color: #262621;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #262621;
+    padding: 2rem;
+    margin: 1rem;
+    margin-left: 0;
+}
 main h1 {
     color: #fff;
 }
@@ -219,6 +355,52 @@ figure.aboutwrapped figcaption {
 
 
 
+/* Start of the form submission styling */
+.screensaverForm fieldset {
+    border: 1px solid #fff;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+.screensaverForm legend {
+    color: #fff;
+    font-size: 1rem;
+}
+.screensaverForm label {
+    margin: .5rem;
+}
+.screensaverForm label, .screensaverForm select, .screensaverForm [type=text], .screensaverForm [type=tel], .screensaverForm [type=email], .screensaverForm textarea {
+    display: block;
+}
+.screensaverForm [type=text], .screensaverForm [type=tel], .screensaverForm [type=email], .screensaverForm select, .screensaverForm textarea {
+    border: 1px solid #262621;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 300;
+    color: rgba(255,255,255,.9);
+}
+.screensaverForm textarea {
+    height: 6rem;
+    color: #262621;
+}
+.screensaverForm :required {
+    background-color: rgba(26,26,21,0.2);
+}
+input::placeholder {
+    color: #fff;
+    opacity: 0.9;
+}
+.screensaverForm [type=submit] {
+    background-color: #4a4a42;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    color: #fff;
+    margin: 1rem 0 0 .5vw;
+}
+
+
 
 /* Start of the "Wildlife" gallery page styling */
 div.gallery {
@@ -232,6 +414,9 @@ div.gallery figcaption {
     text-align: center;
     font-size: .8rem;
 
+}
+div.gallery img:hover {
+    box-shadow: 0 0 12px rgba(0,0,0,.5);
 }
 
 
@@ -276,74 +461,8 @@ footer a:hover {
 
 
 
-/* Start of media styling for screen width 720px or less */
-@media (max-width: 720px){
-    
-    /* Start of the main media styling for smaller screen widths */
-    main ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: block;
-    }
-    main h2 {
-        margin-top: 2rem;
-        margin-bottom: -.5rem;
-    }
-
-    /* Start of the gallery navigation media styling for smaller screen widths */
-    
-    /* Start of the navigation styling of the h1 and p*/
-    ul.gallerypage {
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 0;
-        margin: 0 auto;
-        width: calc(100% - 4vw);
-    }
-    main li.gallery {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        max-width: 400px;
-        padding: 1.5rem;
-        box-sizing: border-box;
-    }
-    
-    /* Start of the gallery navigation styling */
-    .gallerynav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .gallerynav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2.5rem;
-        padding: 0;
-        margin: 0 auto;
-    }
-    .gallerynav a {
-        font-size: 2rem;
-        text-decoration: none;
-        background-color: #262621;
-        color: #fff;
-        padding: 0.8rem 1.5rem;
-        font-weight: 500;
-        text-align: center;
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-    li.gallerynav {
-        padding: 0;
-    }
+/* Create a max screen width */
+header, nav, main, footer {
+    max-width: 80rem;
+    margin: 0 auto;
 }
