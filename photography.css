@@ -352,6 +352,26 @@ figure.aboutwrapped figcaption {
     text-align: center;
     font-size: .75rem;
 }
+table.possible-prices {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.possible-prices th {
+    background-color: #262621;
+    color: #fff;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.possible-prices td {
+    color: #fff;
+    padding: .4rem 2vw;
+}
+table.possible-prices tr:nth-child(odd) {
+    background-color: #26262124;
+}
+table.possible-prices tr:hover {
+    background-color: rgba(26,26,21,0.2);
+}
 
 
 
